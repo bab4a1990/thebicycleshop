@@ -1,0 +1,146 @@
+extends templates/layout
+
+block main
+	.b-about#about
+		.container
+			img(src="img/about-option.png", alt="option").b-about__img
+			h1.b-about__title A NEW GENERATION OF VINTAGE BIKE
+			p.b-about__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+	
+	.b-work#work
+		.row.no-gutters
+			.col-md-8
+				.b-work__item.b-work__block__first
+				img(src="img/logo-work.png", alt="logo").b-work__img
+
+			.col-md-4
+				.b-work__item__first#item-f
+					img(src="img/oliva.png", alt="oliva").b-work__item__first__img
+					.b-work__item__first__title vintage Oliva
+					.b-work__item__first__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
+				.b-work__item__second.b-work__first#item-s
+
+		.row.no-gutters
+			.col-md-4
+				.b-work__item__first#item-f1
+					img(src="img/borisa.png", alt="oliva").b-work__item__first__img
+					.b-work__item__first__title La Boriosa
+					.b-work__item__first__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
+				.b-work__item__second.b-work__second#item-s1
+					
+			.col-md-8
+				.b-work__item.b-work__block__second
+				img(src="img/logo-2.png", alt="logo").b-work__img
+
+		.row.no-gutters
+			
+			.col-md-4
+				.b-work__item.b-work__block__third
+				img(src="img/logo-4.png", alt="logo").b-work__img__logo
+			.col-md-4
+				.b-work__item__first#item-f2
+
+					img(src="img/bike.png", alt="oliva").b-work__item__first__img
+					.b-work__item__first__title retrò Bike - M. Hulot
+					.b-work__item__first__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
+				.b-work__item__second.b-work__third#item-s2
+			.col-md-4
+				.b-work__item__bg.b-work__item
+	.b-icons
+		.container
+			#myCarousel.carousel.slide(data-ride='carousel')
+				ol.carousel-indicators
+					li.active.b-icons__bg(data-target='#myCarousel', data-slide-to='0')
+					li.b-icons__bg(data-target='#myCarousel', data-slide-to='1')
+					li.b-icons__bg(data-target='#myCarousel', data-slide-to='2')
+				.carousel-inner
+					.item.active
+						img(src="img/icon-twit.png", alt="twit").b-icons__img
+						h3.b-icons__title AOD New York @aod
+						h3.b-icons--mod / 0.35
+						p.b-icons__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+						
+					.item
+						img(src="img/icon-twit.png", alt="twit").b-icons__img
+						h3.b-icons__title AOD New York @aod 
+						h3.b-icons--mod / 0.35
+						p.b-icons__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+					.item
+						img(src="img/icon-twit.png", alt="twit").b-icons__img
+						h3.b-icons__title AOD New York @aod 
+						p.b-icons__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+				a.carousel-control-prev.b-icons__arrow(href='#myCarousel', role='button', data-slide='prev')
+					span.carousel-control-prev-icon(aria-hidden='true')
+					span.sr-only Previous
+				a.carousel-control-next(href='#myCarousel', role='button', data-slide='next')
+					span.carousel-control-next-icon(aria-hidden='true')
+					span.sr-only Next
+
+	.b-shop#shop
+		.row.no-gutters.b-over
+			.col-md-4
+				.row.no-gutters
+					.col-md-6
+						.b-shop__item.b-shop__bg__first
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="shop").b-shop__img
+					.col-md-6 
+						.b-shop__item.b-shop__bg__second
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+				.row.no-gutters
+					.col-md-12
+						.b-shop__item.b-shop__bg__third
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+			.col-md-2
+				.row.no-gutters
+					.col-md-12
+						.b-shop__item.b-shop__bg__four
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+			.col-md-2
+				.row.no-gutters
+					.col-md-12
+						.b-shop__item.b-shop__bg__five
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+						 
+			.col-md-4
+				.row.no-gutters
+					.col-md-12
+						.b-shop__item.b-shop__bg__six
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+				.row.no-gutters
+					.col-md-6
+						.b-shop__item.b-shop__bg__sev
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+					.col-md-6 
+						.b-shop__item.b-shop__bg__eig
+							.b-shop__mask
+								img(src="img/shop-now.png", alt="1").b-shop__img
+		.b-discover
+			a(href="#") DISCOVER THE SHOP
+	.b-email#contact
+		.container
+			.b-email__logo 
+				a(href="#")
+					img(src="img/header-logo.png", alt="polo email")
+			h3.b-email__title Stay on the saddle!
+			input(type="search" class="b-email__input" placeholder="enter your email... ")
+			a(href="#")
+				h1.b-email__btn go
+
+
+			
+
+
+
+			
+
+
+				
+
+	

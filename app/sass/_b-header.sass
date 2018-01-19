@@ -1,0 +1,205 @@
+.wrapper
+	overflow: hidden
+.b-header
+	background:  url(../img/header-bg.png) center no-repeat
+	height: 800px
+	text-align: center
+	background-size: cover
+	&__logo
+		margin-top: 35px
+	&__menu--first
+		position: relative
+		left: 85px
+		top: -67px
+		max-width: 50%
+		+xl
+			position: relative
+			left: 10px  
+		+lg
+			position: relative
+			left: -49px
+			max-width: 51%
+		+md
+			position: relative;
+			left: -138px;
+			max-width: 79%;
+			display: none
+			
+		ul
+			list-style: none
+			li
+				display: inline-block
+				margin-right: 70px
+				a
+					color: #4d4959;
+					font-family: 'Lato';
+					font-size: 13px;
+					font-weight: 700;
+					text-transform: uppercase;
+					/* Text style for "about us" */
+					letter-spacing: 2.6px;
+					text-decoration: none
+					cursor: pointer
+					display: inline-block;
+					// &:hover
+					//  border-bottom: 2px solid #85cdb3
+					//  padding: 7px 0
+					&:after
+						background-color: #85cdb3;
+						display: block;
+						content: "";
+						height: 2px;
+						width: 0%
+						margin: 7px 0
+						transition: width .3s ease-in-out;
+					&:hover:after, &:focus:after
+						width: 100%
+
+	&__menu--second
+		position: relative
+		left: 496px
+		top: -118px
+		width: 50%
+		+lg
+			position: relative
+			left: 424px
+		+md
+			position: relative;
+			left: 319px;
+			width: 67%
+			display: none
+			
+
+		ul
+			list-style: none
+			li
+				display: inline-block
+				margin-right: 70px
+				a
+					color: #4d4959;
+					font-family: 'Lato';
+					font-size: 13px;
+					font-weight: 700;
+					text-transform: uppercase;
+					/* Text style for "about us" */
+					letter-spacing: 2.6px;
+					text-decoration: none
+					cursor: pointer
+
+					&:after
+						background-color: #85cdb3;
+						display: block;
+						content: "";
+						height: 2px;
+						width: 0%
+						margin: 7px 0
+						transition: width .3s ease-in-out;
+					&:hover:after, &:focus:after
+						width: 100%
+//hamburger-menu                 
+$hamburger-width: 2rem;
+$hamburger-height: 1.5rem;
+$hamburger-line-width: 4px;
+$hamburger-line-color: #85cdb3;
+$hamburger-animation-speed: 150ms;
+
+input[type="checkbox"]#menu-toggle 
+	display: none;
+label[for="menu-toggle"] 
+	position: absolute;
+	display: block;
+	top: 40px
+	display: none
+	right: 30px
+	width: $hamburger-width;
+	height: $hamburger-height;
+	background: transparent;
+	&:hover 
+		cursor: pointer;
+	+lg
+		display: none
+	+md
+		display: block
+span 
+	position: absolute;
+	height: $hamburger-line-width;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	background: $hamburger-line-color;
+	transition: all $hamburger-animation-speed;
+	border-radius: $hamburger-line-width/2;
+	&:nth-of-type(2)
+		top: 50%;
+		margin-top: -1 * ($hamburger-line-width/2);
+	// Position the bottom hamburger line. The bottom bun
+	&:last-of-type 
+		bottom: 0;
+		top: auto;
+.menu-header
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 200ms, opacity 200ms;
+	position: absolute
+	top: 150px
+	left: 0
+	background: rgba(109, 186, 156, 0.64)
+	width: 100%
+	height: 100%
+	padding-top: 30px
+	display: none
+	
+	+md 
+		display: block
+		
+	a
+		color: #000;
+		font-family: 'Lato';
+		font-size: 1.2em;
+		font-weight: 700;
+		width: 100%
+		text-transform: uppercase;
+		letter-spacing: 2.6px;
+		text-decoration: none
+		cursor: pointer
+		&:after
+			background-color: #85cdb3;
+			display: block;
+			content: "";
+			height: 2px;
+			width: 0%
+			margin: 7px 0
+//hamburger
+input[type="checkbox"]#menu-toggle:checked ~ label 
+	span:first-of-type,
+	span:last-of-type 
+		width: 2rem;
+		top: 50%;
+		left: 50%;
+		right: auto;
+		margin-top: -1 * ($hamburger-line-width / 2);
+		margin-left: -1 * ($hamburger-height / 2);
+	span:first-of-type 
+		transform: rotate(45deg);
+	span:nth-of-type(2) 
+		opacity: 0;
+		left: 50%;
+		width: 0;
+		right: 50%;
+	span:last-of-type 
+		transform: rotate(-45deg);
+input[type="checkbox"]:checked ~ .menu-header
+	opacity: 1;
+	visibility: visible;
+	transition: visibility $hamburger-animation-speed, opacity $hamburger-animation-speed;
+
+
+
+
+
+	
+
+
+	
+		
